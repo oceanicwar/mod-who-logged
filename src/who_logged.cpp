@@ -67,26 +67,7 @@ public:
     }
 };
 
-class who_logged_conf : public WorldScript
-{
-public:
-    who_logged_conf() : WorldScript("who-logged_conf") { }
-
-    void OnBeforeConfigLoad(bool reload) override
-    {
-        if (!reload) {
-            std::string cfg_file = "who-logged.conf";
-            std::string cfg_def_file = cfg_file + ".dist";
-
-            sConfigMgr->LoadMore(cfg_def_file.c_str());
-
-            sConfigMgr->LoadMore(cfg_file.c_str());
-        }
-    }
-};
-
 void AddWhoLoggedScripts()
 {
     new WhoLoggedAnnounce();
-    new who_logged_conf();
 }
