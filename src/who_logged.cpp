@@ -20,7 +20,7 @@ public:
         uint32 pLevel = p->getLevel();
         std::string pClass;
         std::ostringstream message;
-       
+
 
         if (!sConfigMgr->GetBoolDefault("PlayerAnnounce", true))
         {
@@ -61,9 +61,7 @@ public:
             break;
         }
 
-        sLog->SetColor(true, CYAN);
         sLog->outString("Player '%s' has logged in : Level '%u' : Class '%s' : IP '%s' : AccountID '%u'", playerName.c_str(), pLevel, pClass.c_str(), playerIP.c_str(), pAccountID);
-        sLog->ResetColor(true);
     }
 };
 
