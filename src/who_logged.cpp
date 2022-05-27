@@ -21,7 +21,7 @@ public:
         std::string pClass;
         std::ostringstream message;
 
-        if (!sConfigMgr->GetBoolDefault("PlayerAnnounce", true))
+        if (!sConfigMgr->GetOption<bool>("PlayerAnnounce", true))
         {
             return;
         }
