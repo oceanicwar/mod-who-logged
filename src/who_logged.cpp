@@ -60,7 +60,7 @@ public:
                 break;
         }
 
-        LOG_WARN("module", "Player '{}' has logged in : Level '{}' : Class '{}' : IP '{}' : AccountID '{}'", playerName.c_str(), pLevel, pClass.c_str(), playerIP.c_str(), pAccountID);
+        LOG_INFO("module", "Player '{}' has logged in : Level '{}' : Class '{}' : IP '{}' : AccountID '{}'", playerName.c_str(), pLevel, pClass.c_str(), playerIP.c_str(), pAccountID);
     }
 };
 
