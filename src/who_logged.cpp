@@ -1,4 +1,4 @@
-#include "loader.h"
+#include "loader.cpp"
 #include "Configuration/Config.h"
 #include "Player.h"
 #include "Creature.h"
